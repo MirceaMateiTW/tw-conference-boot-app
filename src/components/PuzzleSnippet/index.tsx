@@ -37,7 +37,9 @@ const PuzzleSnippet = ({ puzzleSnippet, index }: PuzzleSnippet) => {
             {...provided.dragHandleProps}
             draggable={true}
           >
-            <Typography variant="body1">{puzzleSnippet.content}</Typography>
+            <Typography variant="body1" gutterBottom>
+              <b> {puzzleSnippet.content}</b>
+            </Typography>
           </Box>
         );
       }}

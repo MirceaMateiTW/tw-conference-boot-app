@@ -3,13 +3,21 @@
 ## How to start the app
 
 First you need to install the app dependencies
+
 > npm install
 
 Afterwards you need to build the app
+
 > npm run build
 
 Finally run the build
+
 > npm run preview
 
-Access the app lcoally at
+Commands:
+
+> See solution: COMMAND + SHIFT + S
+
+Access the app locally at
+
 > http://localhost:4173/

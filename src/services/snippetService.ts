@@ -16,28 +16,28 @@ const puzzles = Object.freeze({
     snippets: {
       "snippet-1": {
         id: "snippet-1",
-        content: "1 FUNCTION MoveTower(disk, source, dest, spare)",
+        content: "FUNCTION MoveTower(disk, source, dest, spare)",
       },
-      "snippet-2": { id: "snippet-2", content: "2 IF disk == 0, THEN " },
+      "snippet-2": { id: "snippet-2", content: "IF disk == 0, THEN " },
       "snippet-3": {
         id: "snippet-3",
-        content: "3 Move disk from source to dest",
+        content: "Move disk from source to dest",
       },
-      "snippet-4": { id: "snippet-4", content: "4 ELSE" },
+      "snippet-4": { id: "snippet-4", content: "ELSE" },
       "snippet-5": {
         id: "snippet-5",
-        content: "5 MoveTower(disk - 1, source, spare, dest)   ",
+        content: "MoveTower(disk - 1, source, spare, dest)   ",
       },
       "snippet-6": {
         id: "snippet-6",
-        content: "6 Move disk from source to dest              ",
+        content: "Move disk from source to dest              ",
       },
       "snippet-7": {
         id: "snippet-7",
-        content: "7 MoveTower(disk - 1, spare, dest, source)   ",
+        content: "MoveTower(disk - 1, spare, dest, source)   ",
       },
-      "snippet-8": { id: "snippet-8", content: "8 END IF" },
-      "snippet-9": { id: "snippet-9", content: "9 END FUNCTION" },
+      "snippet-8": { id: "snippet-8", content: "END IF" },
+      "snippet-9": { id: "snippet-9", content: "END FUNCTION" },
     },
   },
   factorialPuzzle: {
@@ -45,7 +45,7 @@ const puzzles = Object.freeze({
     description: `<div style="display: flex;flex-direction: column;">
           <ul style="list-style: outside disc;display: flex;flex-direction: column;padding: 24px;">
             <li> Factorial of a non-negative integer is the multiplication of all positive integers smaller than or equal to n. For example factorial of 6 is 6*5*4*3*2*1 which is 720.</li>
-            <li> factorial is represented by a number and a  ” ! ”  mark at the end. It is widely used in permutations and combinations to calculate the total possible outcomes. A French mathematician Christian Kramp firstly used the exclamation.</li>
+            <li> Factorial is represented by a number and a  ” ! ”  mark at the end. It is widely used in permutations and combinations to calculate the total possible outcomes. A French mathematician Christian Kramp firstly used the exclamation.</li>
           </ul>
       </div>
     `,
