@@ -16,7 +16,7 @@ Finally run the build
 
 Commands:
 
-> See solution: COMMAND + SHIFT + S
+> On MAC: COMMAND + SHIFT + S
 
 Access the app locally at
 
