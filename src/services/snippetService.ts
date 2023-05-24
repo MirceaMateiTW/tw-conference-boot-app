@@ -4,11 +4,14 @@ import _ from "lodash";
 const puzzles = Object.freeze({
   towerOfHanoiPuzzle: {
     title: "Tower of Hanoi Puzzle",
-    description: `<p>The <b>Tower of Hanoi</b> (also called <b>The problem of Benares Temple</b><sup id="cite_ref-oeis_1-0" class="reference"><a href="#cite_note-oeis-1">[1]</a></sup> or <b>Tower of Brahma</b> or <b>Lucas' Tower</b><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> and sometimes pluralized as <b>Towers</b>, or simply <b>pyramid puzzle</b><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup>) is a <a href="/wiki/Mathematical_game" title="Mathematical game">mathematical game</a> or <a href="/wiki/Puzzle" title="Puzzle">puzzle</a> consisting of three rods and a number of disks of various <a href="/wiki/Diameter" title="Diameter">diameters</a>, which can slide onto any rod. The puzzle begins with the disks stacked on one rod in order of decreasing size, the smallest at the top, thus approximating a <a href="/wiki/Cone" title="Cone">conical</a> shape. The objective of the puzzle is to move the entire stack to the last rod, obeying the following rules:
-    </p>
-    <p><ol><li>Only one disk may be moved at a time.</li>
-    <li>Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack or on an empty rod.</li>
-    <li>No disk may be placed on top of a disk that is smaller than it.</li></ol></p>
+    description: `<div style="display: flex;flex-direction: column;">
+      <p>Tower of Hanoi is a mathematical puzzle where we have three rods (<strong>A</strong>, <strong>B</strong>, and <strong>C</strong>) and <strong>N</strong> disks. Initially, all the disks are stacked in decreasing value of diameter i.e., the smallest disk is placed on the top and they are on rod <strong>A</strong>. The objective of the puzzle is to move the entire stack to another rod (here considered <strong>C</strong>), obeying the following simple rules:&nbsp;</p>
+      <ul style="list-style: outside disc;display: flex;flex-direction: column;padding: 24px;">
+        <li>Only one disk can be moved at a time.</li>
+        <li>Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack i.e. a disk can only be moved if it is the uppermost disk on a stack.</li>
+        <li>No disk may be placed on top of a smaller disk.</li>
+      </ul>
+    </div>
     `,
     snippets: {
       "snippet-1": {
@@ -38,8 +41,13 @@ const puzzles = Object.freeze({
     },
   },
   factorialPuzzle: {
-    title: "Factorial Puzzle",
-    description: `<div role="note" class="hatnote navigation-not-searchable">This article is about products of consecutive integers. For statistical experiments over all combinations of values, see <a href="/wiki/Factorial_experiment" title="Factorial experiment">factorial experiment</a>. For data representation by independent components, see <a href="/wiki/Factorial_code" title="Factorial code">factorial code</a>.</div>
+    title: "Factorial of a Number Puzzle",
+    description: `<div style="display: flex;flex-direction: column;">
+          <ul style="list-style: outside disc;display: flex;flex-direction: column;padding: 24px;">
+            <li> Factorial of a non-negative integer is the multiplication of all positive integers smaller than or equal to n. For example factorial of 6 is 6*5*4*3*2*1 which is 720.</li>
+            <li> factorial is represented by a number and a  ” ! ”  mark at the end. It is widely used in permutations and combinations to calculate the total possible outcomes. A French mathematician Christian Kramp firstly used the exclamation.</li>
+          </ul>
+      </div>
     `,
     snippets: {
       "snippet-1": { id: "snippet-1", content: "FUNCTION Factorial(number)" },
@@ -56,7 +64,10 @@ const puzzles = Object.freeze({
   },
   reverseString: {
     title: "Reverse String Puzzle",
-    description: `<p>The reverse of a string is a string with the same symbols but in reverse order. For example, if <i>s</i> = abc (where a, b, and c are symbols of the alphabet), then the reverse of <i>s</i> is cba. A string that is the reverse of itself (e.g., <i>s</i> = madam) is called a <a href="/wiki/Palindrome#Computation_theory" title="Palindrome">palindrome</a>, which also includes the empty string and all strings of length 1.</p>
+    description: `<div style="display: flex;flex-direction: column;">
+        <p> The reverse of a string is a string with the same symbols but in reverse order. For example, if <i>s</i> = abc (where a, b, and c are symbols of the alphabet), then the reverse of <i>s</i> is cba. </p>
+        <p> A string that is the reverse of itself (e.g., <i>s</i> = madam) is called a <strong>Palindrome</strong>, which also includes the empty string and all strings of length 1.</p>
+    </div>
     `,
     snippets: {
       "snippet-1": { id: "snippet-1", content: "FUNCTION Reverse(s)" },
@@ -76,8 +87,14 @@ const puzzles = Object.freeze({
   },
   linearSearch: {
     title: "Linear Search Puzzle",
-    description: `<p>In <a href="/wiki/Computer_science" title="Computer science">computer science</a>, a <b>linear search</b> or <b>sequential search</b> is a method for finding an element within a <a href="/wiki/List_(computing)" class="mw-redirect" title="List (computing)">list</a>. It sequentially checks each element of the list until a match is found or the whole list has been searched.<sup id="cite_ref-FOOTNOTEKnuth1998§6.1_(&quot;Sequential_search&quot;)_1-0" class="reference"><a href="#cite_note-FOOTNOTEKnuth1998§6.1_(&quot;Sequential_search&quot;)-1">[1]</a></sup>
-    </p>`,
+    description: `<div style="display: flex;flex-direction: column;">
+        <p>Linear Search is defined as a sequential search algorithm that starts at one end and goes through each element of a list until the desired element is found, otherwise the search continues till the end of the data set.</p>
+        <ul style="list-style: outside disc;display: flex;flex-direction: column;padding: 24px;">
+          <li> Every element is considered as a potential match for the key and checked for the same.</li>
+          <li> If any element is found equal to the key, the search is successful and the index of that element is returned.</li>
+          <li> If no element is found equal to the key, the search yields <strong>not_found</strong>.</li>
+      </ul>
+    </div>`,
     snippets: {
       "snippet-1": { id: "snippet-1", content: "FUNCTION Linear(list, value)" },
       "snippet-2": {
@@ -100,8 +117,16 @@ const puzzles = Object.freeze({
   },
   binarySearch: {
     title: "Binary Search Puzzle",
-    description: `<p>In <a href="/wiki/Computer_science" title="Computer science">computer science</a>, <b>binary search</b>, also known as <b>half-interval search</b>,<sup id="cite_ref-Williams1976_1-0" class="reference"><a href="#cite_note-Williams1976-1">[1]</a></sup> <b>logarithmic search</b>,<sup id="cite_ref-FOOTNOTEKnuth1998§6.2.1_(&quot;Searching_an_ordered_table&quot;),_subsection_&quot;Binary_search&quot;_2-0" class="reference"><a href="#cite_note-FOOTNOTEKnuth1998§6.2.1_(&quot;Searching_an_ordered_table&quot;),_subsection_&quot;Binary_search&quot;-2">[2]</a></sup> or <b>binary chop</b>,<sup id="cite_ref-FOOTNOTEButterfieldNgondi201646_3-0" class="reference"><a href="#cite_note-FOOTNOTEButterfieldNgondi201646-3">[3]</a></sup> is a <a href="/wiki/Search_algorithm" title="Search algorithm">search algorithm</a> that finds the position of a target value within a <a href="/wiki/Sorted_array" title="Sorted array">sorted array</a>.<sup id="cite_ref-FOOTNOTECormenLeisersonRivestStein200939_4-0" class="reference"><a href="#cite_note-FOOTNOTECormenLeisersonRivestStein200939-4">[4]</a></sup><sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> Binary search compares the target value to the middle element of the array. If they are not equal, the half in which the target cannot lie is eliminated and the search continues on the remaining half, again taking the middle element to compare to the target value, and repeating this until the target value is found. If the search ends with the remaining half being empty, the target is not in the array.
-    </p>`,
+    description: `<div style="display: flex;flex-direction: column;">
+        <p>Binary Search is defined as a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N).</p>
+        <ul style="list-style: outside disc;display: flex;flex-direction: column;padding: 24px;">
+          <li> Divide the search space into two halves.</li>
+          <li> Compare the middle element of the search space with the key.</li>
+          <li> If the key is found at middle element, the process is terminated.</li>
+          <li>If the key is not found at middle element, choose which half will be used as the next search space.</li>
+          <li>This process is continued until the key is found or the total search space is exhausted.</li>
+        </ul>
+    </div>`,
     snippets: {
       "snippet-1": {
         id: "snippet-1",
