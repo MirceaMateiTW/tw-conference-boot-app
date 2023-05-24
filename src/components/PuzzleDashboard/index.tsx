@@ -20,9 +20,6 @@ const PuzzleDashboard = () => {
   useKeyDown(() => {
     handleSolvePuzzle();
   }, ["Meta", "Shift", "s"]);
-  // useKeyDown(() => {
-  //   handleRefreshPuzzle();
-  // }, ["Meta", "Shift", "r"]);
 
   const handleRefreshPuzzle = () => {
     setPuzzleData(getRandomPuzzleData());
