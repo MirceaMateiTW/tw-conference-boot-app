@@ -12,7 +12,7 @@ const SuccessMessage = () => {
       })}
     >
       <Typography variant="h2" gutterBottom>
-        {"Congrats! You actually did it. Who would have thought?"}
+        {"Congrats! You actually did it."}
       </Typography>
       <Box component={"div"} className="rounded-md p-2 text-6xl">
         &#128526;
