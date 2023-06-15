@@ -6,7 +6,8 @@ const CustomAppBar = () => {
   return (
     <AppBar
       sx={(theme) => ({
-        backgroundColor: theme.palette.ixColorWave60.main,
+        backgroundColor: theme.palette.ixColorMist.main,
+        boxShadow: "none",
       })}
     >
       <Toolbar>
