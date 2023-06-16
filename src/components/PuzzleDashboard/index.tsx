@@ -19,7 +19,7 @@ const PuzzleDashboard = () => {
   const [snippetOrder, setSnippetOrder] = useState<Array<string>>([]);
   useKeyDown(() => {
     handleSolvePuzzle();
-  }, ["Meta", "Shift", "."]);
+  }, ["Meta", "Shift", "k"]);
 
   const handleRefreshPuzzle = () => {
     setPuzzleData(getRandomPuzzleData());
